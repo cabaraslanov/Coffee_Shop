@@ -1,0 +1,1306 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/*Burda axtaris kodlari olacaq*/
+ .axtaris{
+     position:fixed;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     width:100%;
+     height:800px;
+     box-sizing:border-box;
+     background:#fff;
+     left:-100%;
+     z-index:5;
+     transition:0.9s;
+     
+
+ }
+ .axtaris .times{
+    display:flex;
+    width:100%;
+    height:60px;
+    box-sizing:border-box;
+    padding:5%  0 0 80% ;
+    font-size:40px;
+    color:chocolate;
+}
+.axtaris .times:hover{
+    cursor:pointer;
+}
+ .axtaris-input{
+     width:75%;
+     margin-top:250px;
+     text-align:center;
+     border-bottom:1px dashed chocolate;
+ }
+ .axtaris-input ::placeholder{
+     color: chocolate; 
+     font-size:40px;
+    
+ }
+ .axtaris-input input{
+     width:100%;
+     height:3em;
+     text-align:center;
+     font-size:25px;
+     color:chocolate;
+     border:none;
+     margin: 0 auto;
+ }
+ .axtaris-input input:focus{
+    outline:none;
+ }
+
+
+/*Burda Header kodlarim baslayir*/
+#headerimg{
+    width:100%;
+    height:600px;
+    background:url(img/header-esas-sehife1.jpg) no-repeat;
+    background-size:cover;
+}
+
+#nav-menu{
+    display:flex;
+    flex-direction: row;
+    position:fixed;
+    z-index:3;
+    width:100%;
+    height:80px;
+    border-bottom:1px solid rgb(190, 184, 185);
+    justify-content:space-around;
+    float:left;
+    background:#F6F6F6;  
+}
+#nav-menu a{
+    color:#CC6600;
+}
+#menu{
+    float:left;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    display:inline-block;
+    width:100px;
+    height:79px;
+    text-align:center;
+    line-height:79px;
+}
+/* #menu ul li i{
+    font-size: 12px;
+} */
+#menu ul li a{
+    text-decoration:none;
+}
+#menu li:nth-child(1) a{
+    display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+}
+
+#menu ul li a:hover{
+    display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+    
+}
+#logo{
+    display:block;
+    height:80px;
+    float:left;
+    line-height:80px;
+}
+#logo a{
+    font:bold 30px tahoma;
+    text-decoration:none;
+}
+#search{
+    display:block;
+    font-size:25px;
+    height:80px;
+    line-height: 80px;  
+}
+
+
+/*Burda Main kodlarim baslayir*/
+
+#xos{
+    width:240px;
+    height:auto;
+    font:60px oswald;
+    margin:70px auto 30px;
+    text-align: center;
+}
+#giris{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-bottom: 80px;
+}
+#onceliy{
+    width:600px;
+    height:300px;
+    background:url(img/onceliy2.jpg) no-repeat;
+    box-sizing: border-box;
+    padding:0 0 0 310px;  
+    float:left;
+    background-color:#E0E0E0;
+}
+.once{
+    font:32px oswald;
+    
+}
+.once2{
+    font:20px tahoma;
+    color:#606060;
+    
+}
+#erzaq{
+    width:600px;
+    height:300px;
+    background:url(img/erzaq1.jpg) no-repeat;
+    float:left;
+    box-sizing: border-box;
+    padding:0 0 0 310px; 
+    background-color: #CCE5FF;
+}
+
+/*Burda Section kodlarim baslayir*/
+#section1{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:auto;
+    box-shadow:0 4px 5px darkgray,0 -4px 5px darkgray;
+    box-sizing: border-box;
+}
+
+.branc{
+    width:50%;    
+    background:url(img/branc1.jpg) no-repeat;
+    box-sizing:border-box;
+    padding:0 0 0 245px;
+    border-right:1px dashed #000;
+    float:left;
+}
+.brancic{
+    text-align: center;
+    box-sizing:border-box;
+    padding-top:50px;
+}
+.brancic .p1{
+    font:48px oswald;
+}
+.brancic .p2{
+    color:#CC6600;
+    font:bold 18px sans-serif;
+}
+.brancyazi1{
+    float:left;
+}
+.brancyazi{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.brancpul{
+    float:right;
+    font-size:18px;
+    color:#CC6600;
+}
+.brancyazi a{
+    text-decoration:none;
+    font:16px tahoma;
+    color:black;
+}
+.brancyazi a:hover{
+    color:#CC6600;
+}
+.brancyazi p{
+    font:13px tahoma;
+    color:#606060;
+}
+.brancic .hamburger{
+    font-size:50px;
+    color:#CC6600;
+    margin-bottom:20px;
+
+}
+.piano{
+    width:50%;
+    background-image:url(img/piano3.jpg);
+    background-repeat: no-repeat;
+    background-position:top right;
+    float:left;
+}
+.pianoic{
+    text-align: center;
+    box-sizing:border-box;
+    padding:50px 320px 0 0;
+}
+.pianoic .coffe{
+    font-size:50px;
+    color:#CC6600;
+    margin-bottom:20px;
+}
+.pianoic .p1{
+    font:48px oswald;
+}
+.piano .p2{
+    color:#CC6600;
+    font:bold 18px sans-serif;
+}
+.pianoyazi{
+    width:60%;
+    padding-left:20px;
+    box-sizing:border-box;
+}
+.pianoyazi p{
+    font:18px tahoma;
+    color:#606060;
+}
+.elaqe{
+    text-align: center;
+    box-sizing:border-box;
+    padding:20px 320px 0 0;
+}
+.elaqe .nomre{
+    font:30px oswald;
+    box-sizing:border-box;
+    padding-bottom:30px;
+}
+
+.elaqebtn{
+    position:relative;
+    width:122px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.elaqebtn a{
+    display:block;
+    width:120px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+    letter-spacing: 2px;
+    background:#fff;
+    font-size:16px;
+    border-radius:40px;
+    transition: all 0.7s;
+    text-decoration:none;
+    color:#000;
+}
+
+.elaqe a:after{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #CC6600;
+    transition: all 0.7s;
+    border-radius:40px;
+  }
+ .elaqe a span{
+    position: relative;
+    z-index: 2;
+  }
+  .elaqe a:hover{
+    color: #fff;
+  }
+  
+  .elaqe a:hover:after{
+    height: 100%;
+    border-radius:40px;
+  }
+  .teklif{
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+      align-items: center;
+      margin:100px 0 30px 0;
+  }
+  .teklif .xett1{
+    float:left;
+    border-top:1px solid gray;
+    width:100px;
+
+  }
+.teklif .teklifyazi{
+    float:left;
+    font:60px oswald;
+    margin:0 30px 0 30px;
+}
+.teklifyazi2{
+    display:flex;
+    
+    justify-content:center;
+    color:#CC6600;
+    font:bold 18px sans-serif;
+    margin-bottom:50px;
+}
+
+/*Burda Section2 kodlarim baslayir*/
+.section2{  
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-bottom:100px;
+}
+
+.section2 .kofe{
+    width:250px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    vertical-align:baseline;
+    
+
+}.kofe #kofeic{
+    text-align:center;
+    font:20px sans-serif;
+    color:#606060;
+}
+.kofe #kofe-cay{
+    font:30px oswald;
+}
+.kofe img{
+    border-radius:100%;
+    transition:0.7s;
+}
+.section2 .kofe:hover img{
+    transform: scale(1.1);
+    
+}
+.cay{
+    width:100%;
+    height:500px;
+    background-image:url(img/cay1.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center center;
+    box-sizing:border-box;
+    padding-top:100px;
+}
+.cayyazi{
+ 
+    float:left;
+    font:60px oswald;
+    margin:0 30px 0 30px;
+    color:#fff
+}
+/*Burda Section3 kodlarim baslayir*/
+.section3{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:100px;
+}
+.betaimg{
+   width: 20em;
+    float:left;
+    box-sizing: border-box;
+    padding-top:60px;
+}
+.betayazi{
+    width:26em;
+    float:left;
+}
+.betayazi .yazi1{
+    font:50px tahoma;
+
+}
+.betayazi .yazi2{
+    font:16px sans-serif;
+    color:#606060;
+
+}
+.beta{
+    margin-right:50px;
+}
+.silder{
+    width:20em;
+    text-align:center;
+    height:35em;   
+}
+.carousel-item {
+    border:0.5px solid #606060;
+    border-radius:2px;
+}
+.carousel-item ul{
+    list-style:none;
+    
+}
+.carousel-item ul li{
+    display:inline-block;
+    margin-left:10px; 
+}
+.carousel-item ul li a{
+    color:#606060;
+    border:1px solid #606060;
+    font:11px tahoma;
+    border-radius:8px;
+    text-decoration:none;
+    box-sizing:border-box;
+    padding:2px;
+}
+/* .carousel-item p{
+    padding-top:20px
+} */
+.carousel-item p a{
+    color:black;
+    font:20px oswald;
+    text-decoration: none;
+
+}
+.sliderpul{
+    font-size:18px;
+    color:#CC6600;
+}
+.edviyat{
+    display:flex;
+    margin:0 auto;
+    background-image:url(img/edviyat.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:60%;
+    height:10em;
+}
+.section4-umumi{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+}
+.section4, .section42{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-bottom:60px;
+}
+.show2{
+    display:none;
+    transition:0.7s;
+}
+
+
+.section4-umumi .kofe{
+    width:400px;
+    height:auto;
+    border-right:1px dashed gray;
+    border-radius:8px;
+    float:left;
+}
+.kofe .brancpul{
+    margin-left:-50px;
+}
+.kofe u{
+    font:28px oswald;
+    color:#CC6600;
+}
+.kofe a{
+    font-size:16px;
+}
+.kofe p{
+    font-size:13px;
+}
+.section4-umumi .kofe:first-child{
+    box-shadow:3px 3px 20px gray,-3px -3px 20px gray;
+}
+.section4-umumi .kofe:last-child{
+    box-shadow:3px 3px 20px gray,-3px -3px 20px gray;
+}
+.section4-umumi .elaqe .elaqebtn{
+    margin-left:200px;
+ }
+.dahacox{
+    width:120px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #CC6600;
+    border-radius:30px;
+    text-align:center;
+    line-height:40px;
+    margin-top:-20px;
+    transition:all 0.7s;
+}
+.dahacox a{
+    text-decoration:none;
+    color:black;
+}
+.dahacox:hover{
+    background:#CC6600;
+}
+.dahacox:hover a{
+    color:#fff;
+    text-decoration:none;
+}
+.menyu-btn{
+    width:120px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #CC6600;
+    border-radius:30px;
+    text-align:center;
+    line-height:40px;
+    margin-top:-20px;
+    transition:all 0.7s;
+}
+.menyu-btn a{
+    text-decoration:none;
+    color:black;
+}
+.menyu-btn:hover{
+    background:#CC6600;
+    cursor: pointer;
+}
+.menyu-btn:hover a{
+    color:#fff;
+    text-decoration:none;
+}
+.section5{
+    height:auto;
+    background:#001933;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    box-sizing:border-box;
+    padding:100px 0 0 0;
+}
+.acilisvaxti{
+    width:25%;
+    height:auto;
+    text-align: center;
+    color:#fff;
+}
+.hefteici{
+
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-bottom:1px dashed #606060;
+}
+.div1, .div2{
+   box-sizing:border-box;
+   padding:7px 0;
+   font:18px sans-serif;
+}
+.acilisvaxti .p1{
+    font:30px oswald;
+}
+.acilisvaxti .fa-globe{
+    font-size: 40px;
+    color:#CC6600;
+}
+.acilisvaxti .dahacox a{
+    color:#fff;
+}
+.acilisvaxti .p2{
+    font:18px sans-serif;
+}
+.sosyal{
+ 
+    width:100%;
+    height:50px;
+    line-height:50px;
+}
+.sosyal a{
+    color:#fff;
+    margin-right:20px;    
+    transition:0.8s;
+}
+
+
+.sosyal .facebook{
+    transition:all 0.7s;
+}
+.sosyal .whatsapp{
+    transition:all 0.7s;
+}
+.sosyal .instagram{
+    transition:all 0.7s;
+}
+.sosyal .facebook:hover{
+    color:#4267B2;
+
+}
+.sosyal .whatsapp:hover{
+    color:#0f0; 
+}
+.sosyal .fa-instagram:hover{
+    background: linear-gradient( #515bd4, #8134af, #dd2a7b,#feda77,#f58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.section6 {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-bottom:100px;
+
+}
+.blog{
+    width:301px;
+    height:auto;
+    margin-left:100px;
+    border:1px solid darkgray;
+}
+.blogic1{
+    background:url(img/blog1.jpg) no-repeat;
+}
+.blogic2{
+    background:url(img/blog2.jpg) no-repeat;
+}
+.blogic3{
+    background:url(img/blog3.jpg) no-repeat;
+}
+.blogic1,.blogic2,.blogic3{
+    width:300px;
+    height:200px;
+    background-size: 110%;
+    background-position:center;
+    transition:0.8s;
+    cursor: zoom-in;    
+}
+
+.blog:hover .blogic1{
+    background-size:100%;
+    background-position:center;
+}
+.blog:hover .blogic2{
+    background-size:100%;
+    background-position:center;
+}
+.blog:hover .blogic3{
+    background-size:100%;
+    background-position:center;
+}
+
+
+
+.blog ul li {
+    display:inline-block;
+    margin-left:15px;
+}
+
+
+.blog ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:13px;
+    border:1px dashed black;
+    box-sizing: border-box;
+    padding:3px 12px;
+    border-radius:20px;
+    text-transform:uppercase;
+    
+}
+.blog ul li a:hover{
+    background:#CC6600;
+    color:#fff;
+    transition:0.7s;
+    border:1px dashed #CC6600;  
+}
+.blog .p1{
+    font:18px tahoma;
+    color:black;
+}
+
+.blog .p3{
+    font-size:13px;
+    color:#A0A0A0;
+}
+.yenilendi{
+    width:100%;
+    height:50px;
+    border-top:1px solid darkgray;
+    text-align:center;
+    line-height:50px;
+}
+.blog p{
+    margin-left:20px
+}
+
+
+
+.telif{
+    font:13px tahoma;
+    color:#A0A0A0;
+}
+/*-------------Buradan footer kodlarim baslayir---------*/
+footer{
+    width:100%;
+    height:auto;
+    border:1px solid #001933;
+    background: #001933;
+}
+.footer-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    box-sizing:border-box;
+    padding:100px 10px 40px 10px;
+}
+footer .footer1{
+    width:35%;
+    text-align:center;
+    font-family:oswald;
+    float:left;
+    color:white;
+}
+.footer1 .left-box{
+    padding-top:98px;
+    box-sizing: border-box;
+}
+.footer1 .left-box a{
+    color:#fff;
+}
+.footer1 .left-box a:hover{
+    text-decoration:none;
+}
+.footer1 .right-box{
+    padding-top:98px;
+    box-sizing: border-box;
+}
+.middle-box h1{
+    color:#FF9933;
+    font-size:50px;
+    padding-bottom:30px;
+}
+.middle-box .office:hover{
+    font-size:18px;
+    color:#FF9933;
+    transition:0.7s;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.middle-box p span{
+    color:#CC6600;
+}
+.middle-box p span:hover{
+    text-decoration:underline;
+    transition:0.7s;
+    cursor:pointer;
+}
+.right-box table{
+    display: block;
+    width:100%;
+    height:50px;
+    border:1px solid #CC6600;
+    border-radius:30px;
+}
+
+.right-box .td1{
+    width:100%;
+   
+}
+.right-box .td2{
+    width:200px;
+    border-left:1px solid #CC6600;
+    
+}
+.right-box .td1 input{
+    width:100%;
+    height:48px;
+    border-radius:30px 0 0 30px;
+    box-sizing:border-box;
+    padding-left:25px;
+    border:none;
+    background:none;
+    color:#fff;
+}
+.right-box .td2 input{
+    width:130px;
+    height:48px;
+    border-radius:0 30px 30px 0;
+    border:none;
+    background:none;
+    color:#fff;
+}
+.right-box p{
+    color:#A0A0A0;
+    font-size:14px;
+}
+table input:focus{
+    outline:none;
+}
+
+/*-------------Menu acliq derecesi---------*/
+.section-menu-qiymet{
+    position:absolute;
+    width:100%;
+    height:auto;
+    background:gainsboro;
+    left:-100%;
+    transition:.7s;
+}
+
+
+.menu-qiymet{
+    width:450px;
+    height:auto;
+    margin:40px auto;
+    box-sizing:border-box;
+    box-shadow:5px 5px 15px #C0C0C0, -5px -5px 15px #C0C0C0;
+}
+
+.menu-qiymet ul li{
+    display:block;
+    border:1px solid #606060;
+    float:left;
+    box-sizing: border-box;
+    padding:1px 5px 1px 5px;
+    margin-right:20px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+.menu-qiymet-ic{
+    width:450px;
+    height:300px;
+    background:url(img/menu-qiymet.jpg) no-repeat;
+    background-size:contain;
+}
+.div-yazi{
+    padding:20px;
+    box-sizing:border-box;
+}
+.menu-qiymet .p1{
+    font:bold 14px tahoma;
+}
+.menu-qiymet .p2{
+    font:16px tahoma;
+    color:grey;
+}
+.menu-qiymet .divxett{
+    width:100%;
+    border-top:1px solid gray;
+}
+.menu-qiymet .acliq{
+    font:bold 13px tahoma;
+    margin-bottom:15px;
+}
+.menu-qiymet .acliq i{
+    font-size:15px;
+    color: grey;
+}
+.menu-qiymet .gosterici{
+    width:100%;
+    height:20px;
+    background:#C0C0C0;
+    border-radius:10px;
+    margin:10px auto 20px;
+}
+.menu-qiymet .gosterici .gosterici-ic{
+    width:30%;
+    height:20px;
+    border-radius:10px;
+    background:#FF3333;
+    text-align:center;
+    line-height:20px;
+}
+
+.menu-qiymet table{
+    color:grey;
+    margin-bottom:30px;
+}
+.div-yazi .p3{
+    font:15px tahoma;
+}
+.menu-qiymet-ic .gizlet{
+    display:block;
+    border:1px solid #CC6600;
+    float:right;
+    text-align:center;
+    border-radius:50%;
+    cursor: pointer;
+    background:#fff;
+    box-sizing:border-box;
+    padding:5px 8px;
+    margin:-10px -10px 0 0;
+     }
+.menu-qiymet-ic .gizlet i{
+    font-size:30px; 
+    color:#CC6600;
+}
+
+/*--------------------Bars--------------- */
+ #nav-menu .bars{
+     display:none;
+     font-size:30px;
+     height: 80px;
+     line-height:80px;
+     margin-left:15px;
+     color:#CC6600;
+}
+ #nav-menu .bars:hover{
+    cursor:pointer;
+}
+
+/*--------------------Resposive web design--------------- */
+@media (max-width: 1250px){
+
+    #nav-menu .bars{
+        display:block;
+    }
+    #search a{
+        font-size:25px;
+    }
+    .axtaris-input ::placeholder{
+        font-size:35px;
+    }
+   
+    #nav-menu #menu{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        height:300px;
+        background:#FFE5CC;
+
+    }
+    #nav-menu #menu.show{
+        left:0;
+    }
+
+    #nav-menu #menu ul li{
+        width:100%;
+        height:50px;
+        line-height:50px;
+        margin-left:-15px;
+    }
+    #nav-menu #menu ul li a{
+        color:chocolate;
+    }
+    #menu li:nth-child(1) a{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    }
+
+    #menu ul li a:hover{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    }
+
+    #xos{
+   
+        font-size:50px;
+    }
+
+    #giris{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        position:relative;   
+    }
+    #onceliy{   
+        margin-bottom:20px;
+    }
+    #section1{
+        display:flex;
+        flex-direction:column;
+    }
+    .branc{
+        width:100%; 
+}
+.piano{
+    width:100%;
+}
+.pianoyazi{
+    width:70%;
+}
+
+.section2{  
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:100px;
+}
+.section2 .kofe{
+    margin-bottom:20px;
+}
+
+.section3{
+    display:flex;
+    flex-direction: column;
+    align-items:center;    
+}
+.betayazi{
+    width:20em;
+    padding-left:30px;
+}
+
+.betayazi .yazi1{
+    font:45px tahoma;
+}
+.beta{
+    margin:-80px auto 50px;
+}
+.section4{
+    flex-direction:column;
+    align-items:center;
+}
+.section42{
+    flex-direction:column;
+    align-items:center;
+}
+.section4-umumi .kofe{
+    width:500px;
+}
+.show2{
+    display:none;
+    transition:0.7s;
+}
+.kofe u{
+    text-align:center;
+}
+.section5{
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+}
+.acilisvaxti{
+    height:200px;
+    margin-bottom:30px;
+    width:60%;
+}
+.section6{
+    flex-direction:column;
+    align-items:center;
+}
+.blog{
+    margin:0 0 50px 0;
+}
+}
+
+@media (max-width: 820px){
+    #headerimg{
+        background-size:contain;
+    }
+    #nav-menu{
+        height:60px;
+    }
+    #nav-menu #menu{
+        top:60px;
+    }
+    #menu ul li{
+        font-size:14px;
+    }
+    #logo{
+        height:60px;
+        line-height: 60px;
+    }
+    #logo a{
+        font:bold 27px tahoma;
+    }
+    .bars{
+         margin-top:-11px;
+    }
+    .bars i{
+        font-size:25px;
+    }
+    #search{
+        height:60px;
+        line-height:60px; 
+    }
+    #search a{
+    font-size:22px;
+    }
+    .axtaris-input ::placeholder {
+        font-size:28px;
+    }
+    .axtaris-input input{
+        font-size:22px;
+        height: 50px;
+    }
+    
+    #xos{
+        margin-top:-80px;
+        font-size:45px;
+    }
+    .once{
+        font-size:28px;
+        
+    }
+    .once2{
+        font-size:18px;
+        
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+
+    .branc{
+        width:100%;
+        background:url(img/branc111.jpg) no-repeat;
+        position:top center;
+        background-size:contain;
+        box-sizing:border-box;
+        padding:500px 0 0 0;
+
+    }
+    .piano{
+        width:100%;
+        background-image:url(img/piano33.jpg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:top center;
+        float:left;
+        text-align:center;
+    }
+    .pianoic{
+        text-align:center;
+        padding:700px 20px 0 0;
+    }
+    .pianoyazi{
+        width:100%;
+    }
+    .brancic {
+        padding-top:30%;
+    }
+
+    .elaqe{
+        width:100%;
+        padding:0 130px;    
+    }
+    .elaqe .nomre{
+        font-size:25px;
+    }
+    .teklif .teklifyazi{
+        font-size:45px;
+    }
+    .silder{
+        width:17em;
+        height:30em;   
+    }
+    .edviyat{
+        margin-top:50px;
+        height:6em;
+    }
+
+    .footer-container{
+        flex-direction:column;
+    }
+    footer .footer1{
+        width:100%;
+    }
+    .footer1 .left-box{
+        padding:0 0 50px 0;
+    }
+
+}
+@media (max-width: 770px){
+    #onceliy{
+        width:300px;
+        height:570px;
+        padding:310px 0 0 5px;  
+    }
+    #erzaq{
+        width:300px;
+        height:570px;
+        padding:310px 0 0 5px;  
+    }
+    .branc{
+        padding:500px 0 0 0;
+    }
+    .brancic{
+        padding-top:22%;
+    }
+    .pianoic{
+        padding:640px 20px 0 0;
+    }
+    .betaimg{
+        width:0;
+     }
+     .betayazi{
+         padding-top:300px;
+     }
+     .section4-umumi .kofe{
+        width:400px;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+    #xos{
+        margin-top:-90px;
+    }
+}
+@media (max-width: 700px)
+{
+    .pianoic{
+        padding:580px 20px 0 0;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+
+}
+
+@media (max-width:609px){
+    .menu-qiymet{
+        width:350px;
+    }
+    .menu-qiymet-ic{
+        width:350px;
+    }
+    #xos{
+        margin-top:-250px;
+        font-size:40px;
+    } 
+    .branc{
+        padding:450px 0 0 0;
+    }
+    .brancic{
+        padding-top:0;
+    }
+    .brancyazi{
+        padding:0 5px 0 5px;
+    }
+    .pianoic{
+        padding:450px 20px 0 0;
+    }
+    .silder{
+        width:16em;
+        height:28em;   
+    }
+    .edviyat{
+        height:3em;
+    }
+    .section4-umumi .kofe{
+        width:380px;
+    }
+    .section4-umumi .kofe u{
+        font-size:23px
+    }
+    .section4-umumi .brancpul{
+        font-size:16px;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+ }
+

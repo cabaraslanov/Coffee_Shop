@@ -1,0 +1,676 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    box-sizing: border-box;
+}
+/*Burda axtaris kodlari olacaq*/
+.axtaris{
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:800px;
+    box-sizing:border-box;
+    background:#fff;
+    left:-100%;
+    z-index:5;
+    transition:0.9s;
+    
+
+}
+.axtaris .times{
+   display:flex;
+   width:100%;
+   height:60px;
+   box-sizing:border-box;
+   padding:5%  0 0 80% ;
+   font-size:40px;
+   color:chocolate;
+}
+.axtaris .times:hover{
+   cursor:pointer;
+}
+.axtaris-input{
+    width:40%;
+    margin-top:250px;
+    text-align:center;
+    border-bottom:1px dashed chocolate;
+}
+.axtaris-input ::placeholder{
+    color: chocolate;;
+    font-size:40px;
+   
+}
+.axtaris-input input{
+    width:100%;
+    height:3em;
+    text-align:center;
+    font-size:25px;
+    color:chocolate;
+    border:none;
+    margin: 0 auto;
+}
+/*Burda Header kodlarim baslayir*/
+#headerimg{
+    width:100%;
+    height:600px;
+    background:url(img/qalereya.jpg) no-repeat;
+    background-size:cover;
+    margin-bottom:50px;
+   
+}
+
+#nav-menu{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:80px;
+    border-bottom:1px solid rgb(190, 184, 185);
+    justify-content:space-around;
+    float:left;
+    
+}
+#nav-menu a{
+    color:#CC6600;
+}
+#menu{
+    float:left;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    display:inline-block;
+    width:100px;
+    height:79px;
+    text-align:center;
+    line-height:79px;
+}
+#menu ul li i{
+    font-size: 12px;
+}
+#menu ul li a{
+    text-decoration:none;
+}
+#menu li:nth-child(3) a{
+     display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+}
+#menu ul li a:hover{
+    display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+    
+}
+#logo{
+    display:block;
+    width:200px;
+    height:80px;
+    text-align:center;
+    float:left;
+    line-height:80px;
+ 
+}
+#logo a{
+    line-height:79px;  
+    font:bold 30px tahoma;
+    text-decoration:none;
+}
+#search{
+    display:block;
+    width:50px;
+    height:79px;
+    float:left;
+    
+}
+#search a{
+    text-align:center;
+    line-height:79px;
+    font-size:25px;
+}
+
+
+/*--------------------Bars--------------- */
+ #nav-menu .bars{
+     display:none;
+     font-size:30px;
+     line-height:80px;
+     margin-left:15px;
+     color:#CC6600;
+ }
+ #nav-menu .bars:hover{
+    cursor:pointer;
+}
+
+/*--------Main-Section-Pictures-------------*/
+.section-pictures{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.section-pictures .picture1{
+    width:25%;
+    height:300px;
+    margin:0 5px 5px 0;
+    background-size: contain;
+    padding-top:100px;
+    color:#fff;    
+}
+.picture1 .picture-inside{
+    display:none;
+}
+
+.section-pictures #picture1{
+    background:url("img/qalereya1.jpg")
+}
+.section-pictures #picture2{
+    background:url("img/qalereya2.jpg")
+}
+.section-pictures #picture3{
+    background:url("img/qalereya3.jpg")
+}
+.section-pictures #picture4{
+    background:url("img/qalereya4.jpg")
+}
+.section-pictures #picture5{
+    background:url("img/qalereya5.jpg")
+}
+.section-pictures #picture6{
+    background:url("img/qalereya6.jpg")
+}
+.section-pictures #picture7{
+    background:url("img/qalereya7.jpg")
+}
+.section-pictures #picture8{
+    background:url("img/qalereya8.jpg")
+}
+.section-pictures #picture9{
+    background:url("img/qalereya9.jpg")
+}
+.picture-icon{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.picture-icon .picture-link{
+    margin-left:10px;
+}
+.picture-icon .picture-link,.picture-search{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background:#606060;
+    text-align:center;
+    line-height:50px;
+}
+.picture-icon a{
+ color:#fff;
+}
+.picture-icon a:hover{
+    color:#fff;
+   }
+.section-pictures .picture-write{
+    width:90%;
+    height:auto;
+    text-align:center;
+    background:#606060;
+    margin: 0 auto;
+}
+.section-pictures .picture1:hover{
+    opacity:0.8;
+}
+.section-pictures .picture1:hover .picture-inside{
+    display:block;
+    transition:all 0.7s;
+}
+
+
+/*-----------Section5 codes-----------------*/
+.section5{
+    height:auto;
+    background:#001933;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    box-sizing:border-box;
+    padding:100px 0 0 0;
+}
+.acilisvaxti{
+    width:25%;
+    height:auto;
+    text-align: center;
+    color:#fff;
+}
+.hefteici{
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    border-bottom:1px dashed #606060;
+}
+.div1, .div2{
+   box-sizing:border-box;
+   padding:7px 0;
+   font:18px sans-serif;
+}
+.acilisvaxti .p1{
+    font:30px oswald;
+}
+.acilisvaxti .fa-globe{
+    font-size: 40px;
+    color:#CC6600;
+}
+.acilisvaxti .dahacox a{
+    color:#fff;
+}
+.acilisvaxti .p2{
+    font:18px sans-serif;
+}
+.dahacox{
+    width:120px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #CC6600;
+    border-radius:30px;
+    text-align:center;
+    line-height:40px;
+    margin-top:-20px;
+    transition:all 0.7s;
+}
+.dahacox a{
+    text-decoration:none;
+    color:black;
+}
+.dahacox:hover{
+    background:#CC6600;
+}
+.dahacox:hover a{
+    color:#fff;
+    text-decoration:none;
+}
+.sosyal{
+ 
+    width:100%;
+    height:50px;
+    line-height:50px;
+}
+.sosyal a{
+    color:#fff;
+    margin-right:20px;    
+}
+
+.sosyal .fa-facebook:hover{
+    color:#4267B2;
+    transition:0.8s;
+}
+.sosyal .fa-whatsapp:hover{
+    color:#0f0;
+    transition:0.8s;
+}
+.sosyal .fa-instagram:hover{
+ 
+    background: linear-gradient( #515bd4, #8134af, #dd2a7b,#feda77,#f58529);
+    transition:0.8s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+/*--------------------Resposive web design--------------- */
+@media (max-width: 1250px){
+    #nav-menu .bars{
+        display:block; 
+    }
+    #search a{
+        font-size:25px;
+    }
+
+    #nav-menu #menu{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        height:300px;
+        background:#001714;
+
+    }
+    #nav-menu #menu.show{
+        left:0;
+        transition:0.8s;
+    }
+
+    #nav-menu #menu ul li{
+        width:100%;
+        height:50px;
+        line-height:50px;
+        margin-left:-15px;
+        
+        
+  
+    }
+    #nav-menu #menu ul li a{
+        color:chocolate;
+    }
+    #menu li:nth-child(3) a{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border:1px solid chocolate;
+}
+    #menu ul li a:hover{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border:1px solid chocolate;
+    }
+
+    #xos{
+   
+        font-size:50px;
+    }
+    #giris{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        
+    }
+    #onceliy{   
+        margin-bottom:20px;
+    }
+    #section1{
+        display:flex;
+        flex-direction:column;
+    }
+    .branc{
+        width:100%; 
+    }
+    .piano{
+    width:100%;
+    }
+    .pianoyazi{
+    width:70%;
+    }
+
+.section2{  
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:100px;
+}
+.section2 .kofe{
+    margin-bottom:20px;
+}
+
+.section3{
+    display:flex;
+    flex-direction: column;
+    align-items:center;    
+}
+.betayazi{
+    width:20em;
+    padding-left:30px;
+}
+
+.betayazi .yazi1{
+    font:45px tahoma;
+}
+.beta{
+    margin:-80px auto 50px;
+}
+.section4{
+    flex-direction:column;
+    align-items:center;
+}
+.section42{
+    flex-direction:column;
+    align-items:center;
+}
+.section4-umumi .kofe{
+    width:500px;
+}
+.show2{
+    display:none;
+    transition:0.7s;
+}
+.kofe u{
+    text-align:center;
+}
+.section5{
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+
+}
+.acilisvaxti{
+    height:200px;
+    margin-bottom:30px;
+    width:60%;
+}
+.section6{
+    flex-direction:column;
+    align-items:center;
+}
+.blog{
+    margin:0 0 50px 0;
+}
+
+.section-pictures .picture1{
+    width:30%; 
+}
+}
+
+@media (max-width: 820px){
+    #headerimg{
+        background-size:contain;
+    }
+    header{
+        margin-bottom:-170px;
+    }
+    #nav-menu{
+        height:60px;
+    }
+    #logo{
+        height:60px;
+    }
+    #logo a{
+        height:60px;
+        line-height:60px;
+        font:bold 25px tahoma;
+    }
+    #xos{
+        margin-top:-80px;
+        font-size:45px;
+    }
+    .once{
+        font-size:28px;
+        
+    }
+    .once2{
+        font-size:18px;
+        
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+
+    .branc{
+        width:100%;
+        background:url(img/branc111.jpg) no-repeat;
+        position:top center;
+        background-size:contain;
+        box-sizing:border-box;
+        padding:500px 0 0 0;
+
+    }
+    .piano{
+        width:100%;
+        background-image:url(img/piano33.jpg);
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:top center;
+        float:left;
+        text-align:center;
+    }   
+    .pianoic{
+        text-align:center;
+        padding:700px 20px 0 0;
+    }
+    .pianoyazi{
+        width:100%;
+    }
+    .brancic {
+        padding-top:30%;
+    }
+
+    .elaqe{
+        width:100%;
+        padding:0 130px;    
+    }
+    .elaqe .nomre{
+        font-size:25px;
+    }
+    .teklif .teklifyazi{
+        font-size:45px;
+    }
+    .silder{
+        width:17em;
+        height:30em;   
+    }
+    .edviyat{
+        margin-top:50px;
+        height:6em;
+    }
+
+    .section-pictures{
+        flex-direction:column;
+        align-items:center;
+    }
+    .section-pictures .picture1{
+        width:55%;
+        margin:0 5px 20px 0;
+   
+    }
+
+    .footer-container{
+        flex-direction:column;
+    }
+    footer .footer1{
+        width:100%;
+    }
+    .footer1 .left-box{
+        padding:0 0 50px 0;
+    }
+  
+}
+@media (max-width: 770px){
+    header{
+        margin-bottom:-240px;
+    }
+    #onceliy{
+        width:300px;
+        height:570px;
+        padding:310px 0 0 5px;  
+    }
+    #erzaq{
+        width:300px;
+        height:570px;
+        padding:310px 0 0 5px;  
+    }
+    .branc{
+        padding:500px 0 0 0;
+    }
+    .brancic{
+        padding-top:22%;
+    }
+    .pianoic{
+        padding:640px 20px 0 0;
+    }
+    .betaimg{
+        width:0;
+     }
+     .betayazi{
+         padding-top:300px;
+     }
+     .section4-umumi .kofe{
+        width:400px;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+    #xos{
+        margin-top:-100px;
+    }
+}
+@media (max-width: 700px)
+{
+    header{
+        margin-bottom:-290px;
+    }
+    .pianoic{
+        padding:580px 20px 0 0;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+    .section-pictures .picture1{
+        width:65%;
+        margin:0 5px 20px 0;
+   
+    }
+
+}
+
+
+@media (max-width:609px){
+    header{
+        margin-bottom:-340px;
+    }
+    #xos{
+        margin-top:-200px;
+        font-size:40px;
+    } 
+    .branc{
+        padding:450px 0 0 0;
+    }
+    .brancic{
+        padding-top:0;
+    }
+    .pianoic{
+        padding:450px 20px 0 0;
+    }
+    .silder{
+        width:16em;
+        height:28em;   
+    }
+    .edviyat{
+        height:3em;
+    }
+    .section4-umumi .kofe{
+        width:380px;
+    }
+    .section4-umumi .kofe u{
+        font-size:23px
+    }
+    .section4-umumi .brancpul{
+        font-size:16px;
+    }
+    .acilisvaxti{
+    width:90%;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+ }

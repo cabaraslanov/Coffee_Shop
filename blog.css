@@ -1,0 +1,488 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+
+}
+/*Burda Header kodlarim baslayir*/
+
+#headerimg{
+    background:url(img/blog-header.jpg) no-repeat;
+    background-size:cover;
+    width:100%;
+    height:700px;   
+}
+
+#nav-menu{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:80px;
+    border-bottom:1px solid rgb(190, 184, 185);
+    justify-content:space-around;
+    float:left;
+    background:#E0E0E0;
+    
+}
+#nav-menu a{
+    color:#CC6600;
+}
+#menu{
+    float:left;
+}
+#menu ul{
+    list-style: none;
+}
+#menu ul li{
+    display:inline-block;
+    width:100px;
+    height:79px;
+    text-align:center;
+    line-height:79px;
+}
+#menu ul li i{
+    font-size: 12px;
+}
+#menu ul li a{
+    text-decoration:none;
+    font-weight:bold;
+}
+#menu li:nth-child(4) a{
+     display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+}
+#menu ul li a:hover{
+    display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+    
+}
+#logo{
+    display:block;
+    width:200px;
+    height:80px;
+    text-align:center;
+    float:left;
+    line-height:80px;
+ 
+}
+#logo a{
+    line-height:79px;  
+    font:bold 30px tahoma;
+    text-decoration:none;
+}
+#search{
+    display:block;
+    width:50px;
+    height:79px;
+    float:left;
+    
+}
+#search a{
+    text-align:center;
+    line-height:79px;
+    font-size:25px;
+}
+/*Burda axtaris kodlari olacaq*/
+.axtaris{
+    position:fixed;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+    width:100%;
+    height:800px;
+    box-sizing:border-box;
+    background:#fff;
+    left:-100%;
+    z-index:5;
+    transition:0.9s;
+    
+
+}
+.axtaris .times{
+   display:flex;
+   width:100%;
+   height:60px;
+   box-sizing:border-box;
+   padding:5%  0 0 80% ;
+   font-size:40px;
+   color:chocolate;
+}
+.axtaris .times:hover{
+   cursor:pointer;
+}
+.axtaris-input{
+    width:40%;
+    margin-top:250px;
+    text-align:center;
+    border-bottom:1px dashed chocolate;
+}
+.axtaris-input ::placeholder{
+    color: chocolate;;
+    font-size:40px;
+   
+}
+.axtaris-input input{
+    width:100%;
+    height:3em;
+    text-align:center;
+    font-size:25px;
+    color:chocolate;
+    border:none;
+    margin: 0 auto;
+}
+/*--------------------Bars--------------- */
+#nav-menu .bars{
+    display:none;
+    font-size:30px;
+    line-height:80px;
+    margin-left:15px;
+    color:#CC6600;
+}
+#nav-menu .bars:hover{
+    cursor:pointer;
+}
+/*--------------------Main--Section1-codes-------------- */
+.section1{
+    margin:50px 0 60px 0;
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+    .section1 .yazi1{
+        box-sizing:border-box;
+        padding:0 30px 0 30px;
+    }
+.section1 .yazi2{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:auto;
+    box-sizing:border-box;
+    padding:30px 0 40px 20%;
+}
+#activ{
+    background:#FFB266;
+}
+
+.section1 .yazi2 .yazisol{
+    display:inline-block;
+    width:150px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+}
+.yazi2 .yazisol:hover{
+    cursor:pointer;
+}
+.yazison{
+    box-sizing:border-box;
+    padding:40px 20% 10px 20%; 
+}
+.yazi2 .yazisol:nth-child(2):hover{
+    color:#FFB266;
+}
+
+.section1-img{
+    width:70%;
+    height:auto;
+    margin:0 auto;
+}
+
+.section1-img img{
+    width:100%;
+}
+.read-more{
+    width:150px;
+    height: 60px;
+    color:#fff;
+    background:#000;
+    transition:0.8s;
+    border:none;
+}
+.section1 input{
+    font-size:16px;
+    margin-bottom:60px;
+}
+.section1 input:hover{
+    background:#FFB266;
+    font-weight:bold;
+}
+
+
+
+/*--------------Burdan sosyal media kodlarim baslayir----------*/
+.sosyal{
+ 
+    width:100%;
+    height:50px;
+    line-height:50px;
+}
+.sosyal a{
+    color:#fff;
+    margin-right:20px;    
+}
+.sosyal .fa-facebook{
+    transition:0.7s;
+}
+.sosyal .fa-facebook:hover{
+    color:#4267B2;
+}
+
+.sosyal .fa-instagram:hover{
+    background: linear-gradient( #515bd4, #8134af, #dd2a7b,#feda77,#f58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+/*-------------Buradan footer kodlarim baslayir---------*/
+
+footer{
+    width:100%;
+    height:auto;
+    border:1px solid #001933;
+    background: #001933;
+}
+.footer-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    box-sizing:border-box;
+    padding:100px 10px 40px 10px;
+}
+footer .footer1{
+    width:35%;
+    text-align:center;
+    font-family:oswald;
+    float:left;
+    color:white;
+}
+.footer1 .left-box{
+    padding-top:98px;
+    box-sizing: border-box;
+}
+.dahacox{
+    width:120px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #CC6600;
+    border-radius:30px;
+    text-align:center;
+    line-height:40px;
+    margin-top:-20px;
+}
+.dahacox a{
+    text-decoration:none;
+    color:black;
+}
+.dahacox:hover{
+    background:#CC6600;
+    transition:all 0.7s;
+}
+.dahacox:hover a{
+    color:#fff;
+    text-decoration:none;
+}
+.footer1 .left-box a{
+    color:#fff;
+}
+.footer1 .left-box a:hover{
+    text-decoration:none;
+}
+.footer1 .right-box{
+    padding-top:98px;
+    box-sizing: border-box;
+}
+.middle-box h1{
+    color:#FF9933;
+    font-size:50px;
+    padding-bottom:30px;
+}
+.middle-box .office{
+    transition:0.7s;
+}
+.middle-box .office:hover{
+    font-size:18px;
+    color:#FF9933;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.middle-box p span{
+    color:#CC6600;
+    transition:0.7s;
+}
+.middle-box p span:hover{
+    text-decoration:underline;
+    cursor:pointer;
+}
+.right-box table{
+    display: block;
+    width:100%;
+    height:50px;
+    border:1px solid #CC6600;
+    border-radius:30px;
+}
+
+.right-box .td1{
+    width:100%;
+   
+}
+.right-box .td2{
+    width:200px;
+    border-left:1px solid #CC6600;
+    
+}
+.right-box .td1 input{
+    width:100%;
+    height:48px;
+    border-radius:30px 0 0 30px;
+    box-sizing:border-box;
+    padding-left:25px;
+    border:none;
+    background:none;
+    color:#fff;
+}
+.right-box .td2 input{
+    width:130px;
+    height:48px;
+    border-radius:0 30px 30px 0;
+    border:none;
+    background:none;
+    color:#fff;
+}
+.right-box p{
+    color:#A0A0A0;
+    font-size:14px;
+}
+table input:focus{
+    outline:none;
+}
+
+/*--------------------Resposive web design--------------- */
+@media (max-width: 1250px){
+    #nav-menu .bars{
+        display:block;
+    }
+    #nav-menu #menu{
+        position:absolute;
+        top:80px;
+        left:-100%;
+        width:100%;
+        height:300px;
+        background:#FFE5CC;
+
+    }
+    #nav-menu #menu.show{
+        left:0;
+        transition:0.8s;
+    }
+
+    #nav-menu #menu ul li{
+        width:100%;
+        height:50px;
+        line-height:50px;
+        margin-left:-15px;
+        
+        
+  
+    }
+    #nav-menu #menu ul li a{
+        color:chocolate;
+    }
+    #menu li:nth-child(4) a{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border:1px solid chocolate;
+}
+    #menu ul li a:hover{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border:1px solid chocolate;
+    }
+
+
+}
+@media (max-width:820px){
+    main{
+        margin-top:-200px;
+    }
+    #headerimg{
+        background-size:contain;
+    }
+    #nav-menu{
+        height:60px;
+    }
+    #logo{
+        height:60px;
+    }
+    #logo a{
+        height:60px;
+        line-height:60px;
+        font:bold 25px tahoma;
+    }
+    .section1 .yazi1 h1{
+        font-size:25px;
+    }
+    .section1 .yazi2 .yazisol{    
+        width:120px;
+        height:40px;
+        line-height:40px;
+        font-size:14px;
+    }
+
+    .section1 input{
+        width:120px;
+        height:50px;
+        font-size:14px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+    }
+    footer .footer1{
+        width:100%;
+    }
+    .footer1 .left-box{
+        padding:0 0 50px 0;
+    }
+}
+
+@media (max-width: 770px){
+    main{
+        margin-top:-200px;
+    }
+
+    .section1 .yazi2 .yazisol{    
+        width:100px;
+        height:35px;
+        line-height:35px;
+        font-size:12px;
+    }
+    .section1 input{
+        width:100px;
+        height:40px;
+}
+@media (max-width:700px){
+    main{
+        margin-top:-250px;
+    }
+    .section1 .yazi1 h1{
+        font-size:22px;
+    }
+}
+@media (max-width:609px){
+    main{
+        margin-top:-350px;
+    }
+}
+}

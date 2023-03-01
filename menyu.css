@@ -1,0 +1,1011 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/*Burda axtaris kodlari olacaq*/
+.axtaris{
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:800px;
+    box-sizing:border-box;
+    background:#fff;
+    left:-100%;
+    z-index:5;
+    transition:0.9s;
+    
+
+}
+.axtaris .times{
+   display:flex;
+   width:100%;
+   height:60px;
+   box-sizing:border-box;
+   padding:5%  0 0 80% ;
+   font-size:40px;
+   color:chocolate;
+}
+.axtaris .times:hover{
+   cursor:pointer;
+}
+.axtaris-input{
+    width: 75%;
+    margin-top:250px;
+    text-align:center;
+    border-bottom:1px dashed chocolate;
+}
+.axtaris-input ::placeholder{
+    color: chocolate;;
+    font-size:40px;
+   
+}
+.axtaris-input input{
+    width:100%;
+    height:3em;
+    text-align:center;
+    font-size:25px;
+    color:chocolate;
+    border:none;
+    margin: 0 auto;
+}
+ .axtaris-input input:focus{
+    outline:none;
+ }
+
+
+/*Burda Header kodlarim baslayir*/
+#headerimg{
+   width:100%;
+   height:600px;
+   background:url(img/menyu.jpg) no-repeat;
+   background-size:cover;
+  
+}
+
+#nav-menu{
+   display:flex;
+   flex-direction: row;
+   position:fixed;
+   z-index:3;
+   width:100%;
+   height:80px;
+   border-bottom:1px solid rgb(190, 184, 185);
+   justify-content:space-around;
+   float:left;
+   background:#F6F6F6; 
+   
+}
+#nav-menu a{
+   color:#CC6600;
+}
+#menu{
+   float:left;
+}
+#menu ul{
+   list-style: none;
+}
+#menu ul li{
+   display:inline-block;
+   width:100px;
+   height:79px;
+   text-align:center;
+   line-height:79px;
+}
+#menu ul li i{
+   font-size: 12px;
+}
+#menu ul li a{
+   text-decoration:none;
+}
+#menu li:nth-child(2) a{
+     display:block;
+    width:100px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #CC6600;
+}
+#menu ul li a:hover{
+   display:block;
+   width:100px;
+   height:40px;
+   line-height:40px;
+   border:1px solid #CC6600;
+   
+}
+#logo{
+   display:block;
+   width:200px;
+   height:80px;
+   text-align:center;
+   float:left;
+   line-height:80px;
+
+}
+#logo a{
+   line-height:79px;  
+   font:bold 30px tahoma;
+   text-decoration:none;
+}
+#search{
+    display:block;
+    font-size:25px;
+    height:80px;
+    line-height: 80px;  
+}
+
+/*-------------Menu acliq derecesi---------*/
+.section-menu-qiymet{
+    position:absolute;
+    width:100%;
+    height:auto;
+    background:gainsboro;
+    left:-100%;
+    transition:.7s;
+}
+
+.menu-qiymet{
+    width:450px;
+    height:auto;
+    margin:40px auto;
+    box-sizing:border-box;
+    box-shadow:5px 5px 15px #C0C0C0, -5px -5px 15px #C0C0C0;
+}
+
+.menu-qiymet ul li{
+    display:block;
+    border:1px solid #606060;
+    float:left;
+    box-sizing: border-box;
+    padding:1px 5px 1px 5px;
+    margin-right:20px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+.menu-qiymet-ic{
+    width:450px;
+    height:300px;
+    background:url(img/menu-qiymet.jpg) no-repeat;
+    background-size:contain;
+}
+.div-yazi{
+    padding:20px;
+    box-sizing:border-box;
+}
+.menu-qiymet .p1{
+    font:bold 14px tahoma;
+}
+.menu-qiymet .p2{
+    font:16px tahoma;
+    color:grey;
+}
+.menu-qiymet .divxett{
+    width:100%;
+    border-top:1px solid gray;
+}
+.menu-qiymet .acliq{
+    font:bold 13px tahoma;
+    margin-bottom:15px;
+}
+.menu-qiymet .acliq i{
+    font-size:15px;
+    color: grey;
+}
+.menu-qiymet .gosterici{
+    width:100%;
+    height:20px;
+    background:#C0C0C0;
+    border-radius:10px;
+    margin:10px auto 20px;
+}
+.menu-qiymet .gosterici .gosterici-ic{
+    width:30%;
+    height:20px;
+    border-radius:10px;
+    background:#FF3333;
+    text-align:center;
+    line-height:20px;
+}
+
+.menu-qiymet table{
+    color:grey;
+    margin-bottom:30px;
+}
+.div-yazi .p3{
+    font:15px tahoma;
+}
+.menu-qiymet-ic .gizlet{
+    display:block;
+    border:1px solid #CC6600;
+    float:right;
+    text-align:center;
+    border-radius:50%;
+    cursor: pointer;
+    background:#fff;
+    box-sizing:border-box;
+    padding:5px 8px;
+    margin:-10px -10px 0 0;
+     }
+.menu-qiymet-ic .gizlet i{
+    font-size:30px; 
+    color:#CC6600;
+}
+/*--------------------Section1 kodlarim baslayir--------------- */
+.section1-menyu-basliq{
+    width:60%;
+    height:auto;
+    margin:80px auto;
+    text-align:center;
+}
+.section1-menyu-basliq .div1{
+    font:bold 36px oswald;
+    color:#404040;
+
+}
+.section1-menyu-basliq .div2{
+    font:16px oswald; 
+    color:#A0A0A0;
+}
+/*--------------------Menyu2 kodlari burdan baslayir--------------- */
+.menyu2{
+ display:flex;
+ flex-direction:row;
+ justify-content:center;
+ margin-bottom:50px;
+
+}
+.menyu2 ul{
+    list-style:none;
+}
+.menyu2 ul li{
+    display:inline-block;
+    width:150px;
+    height:42px;
+
+    text-align:center;
+    line-height:42px;
+}
+.menyu2 ul li a{
+    text-decoration:none;
+    font:25px oswald;
+    color:#000;
+}
+.menyu2 ul li:hover{
+    border:1px solid #CC6600; 
+    transition:transition-delay;
+    cursor:pointer;
+    color:#CC6600;
+}
+
+
+/*--------------------Section2 kodlari burdan baslayir--------------- */
+.section2{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.section2-left{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+ .section2.breakfast{
+    width:40%;
+    height:auto;
+    
+}
+.section2 .breakfast:hover{
+    cursor:pointer;
+}
+.section2 .breakfast:hover .breakfast-money{
+    color:#CC6600;
+}
+.section2 .breakfast:hover h4{
+    color:#CC6600;
+}
+.section2 .breakfast-img{
+    width:100px;
+    height:100px;
+    float:left;
+}
+.section2 .breakfast-yazi{
+width:60%;
+height:auto;
+float:left;
+padding-left:15px;
+
+
+}
+.section2 .breakfast-money{
+    width:50px;
+    height:100px;
+    float:left;
+    text-align:center;
+    display:flex;
+
+}
+.bottom-line{
+    display:flex;
+    width:85%;
+    height:40px;
+    border-bottom:1px dashed #ccc;
+    margin-bottom:40px;
+    
+}
+
+.edviyat{
+    display:flex;
+    margin:0 auto;
+    background-image:url(img/edviyat.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:60%;
+    height:10em;
+}
+.teklif{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    margin:100px 0 30px 0;
+}
+.teklif .xett1{
+  float:left;
+  border-top:1px solid gray;
+  width:100px;
+
+}
+.teklif .teklifyazi{
+  float:left;
+  font:60px oswald;
+  margin:0 30px 0 30px;
+}
+.teklifyazi2{
+  display:flex;
+  
+  justify-content:center;
+  color:#CC6600;
+  font:bold 18px sans-serif;
+  margin-bottom:50px;
+}
+
+.section4-umumi{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+}
+.section4, .section42{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-bottom:60px;
+}
+.show2{
+    display:none;
+    transition:0.7s;
+}
+
+
+.section4-umumi .kofe{
+    width:400px;
+    height:auto;
+    border-right:1px dashed gray;
+    border-radius:8px;
+    float:left;
+}
+.kofe .brancpul{
+    margin-left:-50px;
+}
+.kofe u{
+    font:28px oswald;
+    color:#CC6600;
+}
+.kofe a{
+    font-size:16px;
+}
+.kofe p{
+    font-size:13px;
+}
+.section4-umumi .kofe:first-child{
+    box-shadow:3px 3px 20px gray,-3px -3px 20px gray;
+}
+.section4-umumi .kofe:last-child{
+    box-shadow:3px 3px 20px gray,-3px -3px 20px gray;
+}
+.section4-umumi .elaqe .elaqebtn{
+    margin-left:200px;
+ }
+
+ .brancyazi1{
+    float:left;
+}
+.brancyazi{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.brancpul{
+    float:right;
+    font-size:18px;
+    color:#CC6600;
+}
+.brancyazi a{
+    text-decoration:none;
+    font:16px tahoma;
+    color:black;
+}
+.brancyazi a:hover{
+    color:#CC6600;
+}
+.brancyazi p{
+    font:13px tahoma;
+    color:#606060;
+}
+
+.dahacox{
+    width:120px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #CC6600;
+    border-radius:30px;
+    text-align:center;
+    line-height:40px;
+    margin-top:-20px;
+}
+.dahacox a{
+    text-decoration:none;
+    color:black;
+}
+.dahacox:hover{
+    background:#CC6600;
+    transition:all 0.7s;
+}
+.dahacox:hover a{
+    color:#fff;
+    text-decoration:none;
+}
+.menyu-btn{
+    width:120px;
+    height:40px;
+    margin:0 auto;
+    border:1px solid #CC6600;
+    border-radius:30px;
+    text-align:center;
+    line-height:40px;
+    margin-top:-20px;
+}
+.menyu-btn a{
+    text-decoration:none;
+    color:black;
+}
+.menyu-btn:hover{
+    background:#CC6600;
+    transition:all 0.7s;
+    cursor: pointer;
+}
+.menyu-btn:hover a{
+    color:#fff;
+    text-decoration:none;
+}
+/*-------------Buradan footer kodlarim baslayir---------*/
+
+footer{
+    width:100%;
+    height:auto;
+    border:1px solid #001933;
+    background: #001933;
+}
+.footer-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    box-sizing:border-box;
+    padding:100px 10px 40px 10px;
+}
+footer .footer1{
+    width:35%;
+    text-align:center;
+    font-family:oswald;
+    float:left;
+    color:white;
+}
+.footer1 .left-box{
+    padding-top:98px;
+    box-sizing: border-box;
+}
+.footer1 .left-box a{
+    color:#fff;
+}
+.footer1 .left-box a:hover{
+    text-decoration:none;
+}
+.footer1 .right-box{
+    padding-top:98px;
+    box-sizing: border-box;
+}
+.middle-box h1{
+    color:#FF9933;
+    font-size:50px;
+    padding-bottom:30px;
+}
+.middle-box .office:hover{
+    font-size:18px;
+    color:#FF9933;
+    transition:0.7s;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.middle-box p span{
+    color:#CC6600;
+}
+.middle-box p span:hover{
+    text-decoration:underline;
+    transition:0.7s;
+    cursor:pointer;
+}
+.middle-box .sosyal{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+  
+}
+.middle-box .sosyal a{
+    display:block;
+    width:50px;
+    color:#ccc;
+}
+.sosyal .fa-facebook:hover{
+    color:#4267B2;
+    transition:0.8s;
+}
+
+.sosyal .fa-instagram:hover{
+ 
+    background: linear-gradient( #515bd4, #8134af, #dd2a7b,#feda77,#f58529);
+    transition:0.8s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.right-box table{
+    display: block;
+    width:100%;
+    height:50px;
+    border:1px solid #CC6600;
+    border-radius:30px;
+}
+
+.right-box .td1{
+    width:100%;
+   
+}
+.right-box .td2{
+    width:200px;
+    border-left:1px solid #CC6600;
+    
+}
+.right-box .td1 input{
+    width:100%;
+    height:48px;
+    border-radius:30px 0 0 30px;
+    box-sizing:border-box;
+    padding-left:25px;
+    border:none;
+    background:none;
+    color:#fff;
+}
+.right-box .td2 input{
+    width:130px;
+    height:48px;
+    border-radius:0 30px 30px 0;
+    border:none;
+    background:none;
+    color:#fff;
+}
+.right-box p{
+    color:#A0A0A0;
+    font-size:14px;
+}
+table input:focus{
+    outline:none;
+}
+
+/*--------------------Bars kodlari burdan baslayir--------------- */
+#nav-menu .bars{
+    display:none;
+    font-size:30px;
+    line-height:80px;
+    line-height:80px;
+    margin-left:15px;
+    color:#CC6600;
+}
+/*--------------------Resposive web design--------------- */
+@media (max-width: 1250px){
+
+
+   #nav-menu .bars{
+       display:block;
+   }
+   #search a{
+       font-size:25px;
+   }
+    .axtaris-input ::placeholder{
+        font-size:35px;
+    }
+   .section1-menyu-basliq{
+    width:90%;
+}
+
+   #nav-menu #menu{
+       position:absolute;
+       top:80px;
+       left:-100%;
+       width:100%;
+       height:300px;
+       background:#FFE5CC;
+
+   }
+   #nav-menu #menu.show{
+       left:0;
+   }
+
+   #nav-menu #menu ul li{
+       width:100%;
+       height:50px;
+       line-height:50px;
+       margin-left:-15px;
+   }
+   #nav-menu #menu ul li a{
+       color:chocolate;
+   }
+    #menu li:nth-child(2) a{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    border:1px solid chocolate;
+}
+   #menu ul li a:hover{
+   width:100%;
+   height:50px;
+   line-height:50px;
+   border:1px solid chocolate;
+   }
+
+   #xos{
+  
+       font-size:50px;
+   }
+   #giris{
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+       
+   }
+   #onceliy{   
+       margin-bottom:20px;
+   }
+
+   .branc{
+       width:100%; 
+}
+.piano{
+   width:100%;
+}
+.pianoyazi{
+   width:70%;
+}
+
+.section2{
+    width:auto;
+    flex-direction:column;
+    align-items: center;
+}
+.section2-left{
+    width:80%;
+    margin-bottom:20px;
+}
+
+.bottom-line{
+    width:75%;
+}
+
+.section3{
+   display:flex;
+   flex-direction: column;
+   align-items:center;    
+}
+.betayazi{
+   width:20em;
+   padding-left:30px;
+}
+
+.betayazi .yazi1{
+   font:45px tahoma;
+}
+.beta{
+   margin:-80px auto 50px;
+}
+.show2{
+        display:none;
+        transition:0.7s;
+}
+.section4{
+    flex-direction:column;
+    align-items:center;
+}
+.section42{
+    flex-direction:column;
+    align-items:center;
+}
+.section4-umumi .kofe{
+    width:500px;
+}
+.kofe u{
+    text-align:center;
+}
+
+.acilisvaxti{
+   height:200px;
+   margin-bottom:30px;
+   width:60%;
+}
+.section6{
+   flex-direction:column;
+   align-items:center;
+}
+.blog{
+   margin:0 0 50px 0;
+}
+
+
+}
+@media (max-width: 820px){
+
+   #headerimg{
+       background-size:contain;
+   }
+   .section1{
+       margin-top:-100px;
+   }
+   #nav-menu{
+       height:60px;
+   }
+   #nav-menu #menu{
+        top:60px;
+    }
+   #logo{
+       height:60px;
+       line-height: 60px;
+   }
+    #logo a{
+        font:bold 27px tahoma;
+    }
+    .bars{
+         margin-top:-11px;
+    }
+    .bars i{
+        font-size:25px;
+    }
+    #search{
+        height:60px;
+        line-height:60px; 
+    }
+    #search a{
+    font-size:22px;
+    }
+    .axtaris-input ::placeholder {
+        font-size:28px;
+    }
+    .axtaris-input input{
+        font-size:22px;
+        height: 50px;
+    }
+   #xos{
+       margin-top:-80px;
+       font-size:45px;
+   }
+   .show2{
+    display:none;
+    transition:0.7s;
+}
+   .once{
+       font-size:28px;
+       
+   }
+   .once2{
+       font-size:18px;
+       
+   }
+
+   .branc{
+       width:100%;
+       background:url(img/branc111.jpg) no-repeat;
+       position:top center;
+       background-size:contain;
+       box-sizing:border-box;
+       padding:500px 0 0 0;
+
+   }
+   .piano{
+       width:100%;
+       background-image:url(img/piano33.jpg);
+       background-repeat: no-repeat;
+       background-size:contain;
+       background-position:top center;
+       float:left;
+       text-align:center;
+   }
+   .pianoic{
+       text-align:center;
+       padding:700px 20px 0 0;
+   }
+   .pianoyazi{
+       width:100%;
+   }
+   .brancic {
+       padding-top:30%;
+   }
+
+   .elaqe{
+       width:100%;
+       padding:0 130px;    
+   }
+   .elaqe .nomre{
+       font-size:25px;
+   }
+   .teklif .teklifyazi{
+       font-size:45px;
+   }
+   .silder{
+       width:17em;
+       height:30em;   
+   }
+   .edviyat{
+       margin-top:50px;
+       height:6em;
+   }
+
+   .footer-container{
+       flex-direction:column;
+   }
+   footer .footer1{
+       width:100%;
+   }
+   .footer1 .left-box{
+       padding:0 0 50px 0;
+   }
+
+ 
+}
+@media (max-width: 770px){
+  
+   #onceliy{
+       width:300px;
+       height:570px;
+       padding:310px 0 0 5px;  
+   }
+   #erzaq{
+       width:300px;
+       height:570px;
+       padding:310px 0 0 5px;  
+   }
+   .branc{
+       padding:500px 0 0 0;
+   }
+   .brancic{
+       padding-top:22%;
+   }
+   .pianoic{
+       padding:640px 20px 0 0;
+   }
+   .betaimg{
+       width:0;
+    }
+    .section4-umumi .kofe{
+        width:400px;
+    }
+    .show2{
+        display:none;
+        transition:0.7s;
+    }
+
+   #xos{
+       margin-top:-100px;
+   }
+
+   .bottom-line{
+    width:85%;
+}
+}
+@media (max-width: 700px)
+{
+    .section1{
+        margin-top:-200px;
+    }
+   .pianoic{
+       padding:580px 20px 0 0;
+   }
+}
+@media (max-width:609px){
+    .menu-qiymet{
+        width:350px;
+    }
+    .menu-qiymet-ic{
+        width:350px;
+    }
+    .section1{
+        margin-top:-250px;
+    }
+    .menyu2{
+        display:none;
+    }
+   #xos{
+       margin-top:-200px;
+       font-size:40px;
+   } 
+   .branc{
+       padding:450px 0 0 0;
+   }
+   .brancic{
+       padding-top:0;
+   }
+   .brancyazi{
+        padding:0 5px 0 5px;
+    }
+   .pianoic{
+       padding:450px 20px 0 0;
+   }
+   .silder{
+       width:16em;
+       height:28em;   
+   }
+   .edviyat{
+       height:3em;
+   }
+.section4-umumi .kofe{
+        width:380px;
+    }
+    .section4-umumi .kofe u{
+        font-size:23px
+    }
+    .section4-umumi .brancpul{
+        font-size:16px;
+    }
+
+ .section2.breakfast{
+    width:100%;
+    height:auto;
+}
+.breakfast-img{
+    float: none;
+}
+.breakfast-yazi p{
+    display: none;
+}
+.breakfast-money{
+    display: none!important;
+}
+.show2{
+    display:none;
+    transition:0.7s;
+}
+   .bottom-line{
+    width:90%;
+}
+
+}
+
+@media (max-width:500px){
+    .section1{
+        margin-top:-350px;
+    }
+}
